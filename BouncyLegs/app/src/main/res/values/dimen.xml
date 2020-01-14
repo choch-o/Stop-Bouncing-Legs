@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parentPadding">20dp</dimen>
+    <dimen name="textSize">18dp</dimen>
+    <dimen name="textBottomMargin">20dp</dimen>
+    <dimen name="buttonsBottomMargin">10dp</dimen>
+    <dimen name="sectionMargin">50dp</dimen>
+    <dimen name="legPadding">5dp</dimen>
+    <dimen name="btnStartText">30sp</dimen>
+    <dimen name="btnStartHeight">80dp</dimen>
+    <dimen name="tvResult">30sp</dimen>
+</resources>

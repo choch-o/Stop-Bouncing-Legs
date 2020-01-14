@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/parentPadding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="@dimen/textBottomMargin">
+            <TextView
+                android:layout_weight="1"
+                android:paddingStart="@dimen/legPadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leftLeg"
+                android:textSize="@dimen/textSize"/>
+            <TextView
+                android:id="@+id/tvStatusLeft"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statusDisconnected"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/textSize" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginBottom="@dimen/buttonsBottomMargin" >
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnConnect"
+                android:id="@+id/btnStartScanLeft" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnDisconnect"
+                android:id="@+id/btnStopScanLeft"/>
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spModeLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/sectionMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCollectTraining"
+                android:id="@+id/btnCollectTrainingLeft"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnStop"
+                android:id="@+id/btnStopCollectingLeft"/>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/textBottomMargin"-->
+            <!--android:weightSum="3">-->
+
+            <!--<TextView-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingStart="@dimen/legPadding"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/rightLeg"-->
+                <!--android:textSize="@dimen/textSize"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tvStatusRight"-->
+                <!--android:layout_weight="2"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/statusDisconnected"-->
+                <!--android:textColor="@color/colorRed"-->
+                <!--android:textSize="@dimen/textSize" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="2"-->
+            <!--android:layout_marginBottom="@dimen/buttonsBottomMargin" >-->
+            <!--<Button-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/btnConnect"-->
+                <!--android:id="@+id/btnStartScanRight" />-->
+
+            <!--<Button-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/btnDisconnect"-->
+                <!--android:id="@+id/btnStopScanRight"/>-->
+        <!--</LinearLayout>-->
+        <!--<Spinner-->
+            <!--android:id="@+id/spModeRight"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--</Spinner>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3">-->
+            <!--<Button-->
+                <!--android:layout_weight="2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/btnCollectTraining"-->
+                <!--android:id="@+id/btnCollectTrainingRight"/>-->
+            <!--<Button-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/btnStop"-->
+                <!--android:id="@+id/btnStopCollectingRight"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tvResult"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/buttonsBottomMargin"
+            />
+        <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/tvResultRight"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/tvResult"-->
+            <!--android:textStyle="italic"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="@dimen/buttonsBottomMargin"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnStartTesting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnStartHeight"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAccent"
+            android:text="@string/btnStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/btnStartText"/>
+    </LinearLayout>
+</LinearLayout>

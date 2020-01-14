@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mode_array">
+        <item>Still</item>
+        <item>Bouncing</item>
+    </string-array>
+</resources>

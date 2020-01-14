@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BouncyLegs</string>
+    <string name="btnConnect">Connect</string>
+    <string name="btnDisconnect">Disconnect</string>
+    <string name="btnCollectTraining">Collect Training Data</string>
+    <string name="btnStart">START</string>
+    <string name="leftLeg">LEFT LEG: </string>
+    <string name="rightLeg">RIGHT LEG: </string>
+    <string name="statusDisconnected">DISCONNECTED</string>
+    <string name="statusConnected">CONNECTED</string>
+    <string name="btnStop">Stop</string>
+</resources>
